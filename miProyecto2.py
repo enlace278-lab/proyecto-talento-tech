@@ -69,7 +69,7 @@ print(df4.isnull().mean() * 100)
 
 
 # Eliminamos columnas no útiles para análisis inicial
-df4.drop(columns=["Nombre del país","Nombre del grupo étnico", "Fecha de muerte","Código ISO del país","Código DIVIPOLA municipio",], inplace=True)
+df4.drop(columns=["Nombre del país","Nombre del grupo étnico","Fecha de muerte","Código ISO del país","Código DIVIPOLA municipio"], inplace=True)
 
 
 print(df4.columns)
@@ -83,10 +83,10 @@ df4(df4.index[0,4])
 
 # Imputación de valores nulos en variables seleccionadas
 # 'Age': usamos la mediana porque es robusta ante outliers
-df4['Age'].fillna(df4['Age'].median(), inplace=True)  # Mediana para Edad
+df4['Edad'].fillna(df4['Estado'].median(), inplace=True)  # Mediana para Edad
 
 # 'Embarked': usamos la moda (valor más frecuente) para conservar la categoría dominante
-df4['Embarked'].fillna(df4['Embarked'].mode()[0], inplace=True)  # Moda para Embarque
+df4['Sexo'].fillna(df4['Nombre municipio'].mode()[0], inplace=True)  # Moda para Embarque
 
 print(df4.isnull().sum())
 
