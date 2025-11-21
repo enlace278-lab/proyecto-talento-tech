@@ -105,9 +105,11 @@ df4 = df4.drop_duplicates().copy()  # Eliminamos duplicados y copiamos el result
 # =====================================
 
 ##Renombrar una Columna
-df4.rename (columns={"Fare": "Tarifa"}, inplace=True) # se cambia Fare por tarifa
+df4.rename (columns={"Código DIVIPOLA municipio": "Código Municipio"}, inplace=True) # se cambia Fare por tarifa
 print(df4.columns)
 
+df4.rename (columns={"Código DIVIPOLA departamento": "Código Departamento"}, inplace=True) # se cambia Fare por tarifa
+print(df4.columns)
 #nombre de las columnas
 print(df4.columns)
 
