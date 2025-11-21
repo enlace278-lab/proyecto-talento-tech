@@ -76,7 +76,7 @@ df4.drop(columns=["Fecha de muerte"], inplace=True)
 
 print(df4.columns)
 df7=df4.drop(index=[0, 6], inplace=True)
-
+ññ
 # Eliminar las filas en las posiciones 0 y 2
 df8 = df4.drop(df4.index[[0, 6]])
 
