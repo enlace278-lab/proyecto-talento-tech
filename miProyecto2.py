@@ -73,7 +73,6 @@ print(df4.isnull().mean() * 100)
 #df4.drop(columns=["Tipo de recuperación"], inplace=True)
 df4.drop(columns=["Código ISO del país","Nombre del país"], inplace=True)
 print(df4.columns)
-jjj
 df7=df4.drop(index=[0, 6], inplace=True)
 
 # Eliminar las filas en las posiciones 0 y 2
