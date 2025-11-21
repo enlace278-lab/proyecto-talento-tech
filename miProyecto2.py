@@ -70,8 +70,8 @@ print(df4.isnull().mean() * 100)
 
 # Eliminamos columnas no útiles para análisis inicial
 #df4.drop(columns=["Nombre del país","Nombre del grupo étnico","Fecha de muerte","Código ISO del país","Código DIVIPOLA municipio"], inplace=True)
-df4.drop(columns=["Tipo de recuperación"], inplace=True)
-
+#df4.drop(columns=["Tipo de recuperación"], inplace=True)
+df4.drop(columns=["Código ISO del país","Nombre del país"], inplace=True)
 print(df4.columns)
 
 df7=df4.drop(index=[0, 6], inplace=True)
