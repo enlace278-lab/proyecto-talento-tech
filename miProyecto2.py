@@ -214,5 +214,5 @@ print(df5.groupby('Pclass')['IsChild'].mean())
 # =====================================
 # 11. Exportar Dataset Limpio
 # =====================================
-df5.to_csv("titanic_limpio.csv", index=False)
+df4.to_csv("Casos_positivos_de_COVID-19_en_Colombia._20251102limpio.csv", index=False)
 
